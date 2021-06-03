@@ -1,4 +1,4 @@
-import mongoose, { Schema } from 'mongoose';
+import mongoose from 'mongoose';
 
 const citaSchema = new Schema({
   propietario : {type: mongoose.Schema.Types.ObjectId, ref:'Propietario', required: true},  

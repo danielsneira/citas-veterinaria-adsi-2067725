@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const propietarioSchema = new Schema({
 	nombre: { type: String, required: [true, "Nombre obligatorio"] },
