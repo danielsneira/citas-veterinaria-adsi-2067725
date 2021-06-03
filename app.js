@@ -17,9 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/citas", cita);
 app.use("/api/propietarios", propietario);
 
-
 // Middleware para Vue.js router modo history
-const history = require("connect-history-api-fallback");
+import history from "connect-history-api-fallback";
 app.use(history());
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -43,4 +42,3 @@ mongoose.connect(uri, options).then(
 		console.log(err);
 	}
 );
-
