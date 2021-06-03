@@ -30,7 +30,7 @@ app.listen(app.get("puerto"), () => {
 
 // Conexión base de datos
 
-// const uri = "mongodb://localhost:27017/myapp";
+// const uri = "mongodb://localhost:27017/myapp"; //devUri
 const uri = process.env.MONGODB_URI;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 
