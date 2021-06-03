@@ -20,6 +20,7 @@ app.use("/api/propietarios", propietario);
 // Middleware para Vue.js router modo history
 import history from "connect-history-api-fallback";
 app.use(history());
+app.use(express.static("public"));
 
 app.set("puerto", process.env.PORT || 3000);
 app.listen(app.get("puerto"), () => {
