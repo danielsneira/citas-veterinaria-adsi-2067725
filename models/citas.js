@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const citaSchema = new Schema({
+const citaSchema = mongoose.Schema({
   propietario : {type: mongoose.Schema.Types.ObjectId, ref:'Propietario', required: true},  
   mascota: {type: String, required:[true, 'dato obligatorio']},
   fecha:{type: Date, default: Date.now},
