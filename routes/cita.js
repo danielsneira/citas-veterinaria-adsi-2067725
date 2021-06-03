@@ -1,6 +1,5 @@
 import express from "express";
 const router = express.Router();
-
 import Cita from "../models/citas.js";
 
 router.post("/nuevo", async (req, res) => {
@@ -41,4 +40,4 @@ router.get("/", async (req, res) => {
 	}
 });
 
-module.exports = router;
+export default router;
