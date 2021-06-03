@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 import morgan from "morgan";
 import cors from "cors";
 import path from "path";
-import propietario from "./routes/propietario";
-import cita from "./routes/cita";
+import propietario from "./routes/propietario.js";
+import cita from "./routes/cita.js";
 
 const app = express();
 // Middleware

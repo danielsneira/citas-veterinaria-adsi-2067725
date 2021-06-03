@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import Propietario from "../models/propietarios";
+import Propietario from "../models/propietarios.js";
 
 router.post("/nuevo", async (req, res) => {
 	const body = req.body;
